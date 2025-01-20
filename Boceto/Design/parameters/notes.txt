@@ -1,0 +1,4 @@
+PARAMETROS DISEÑO:
+
+Margin entre secciones: 20
+ancho maximo: 6xl
