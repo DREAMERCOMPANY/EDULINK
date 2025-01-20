@@ -6,7 +6,7 @@ El header debe estar en desktop y en mobile, adaptarlo
 
 Hero(Bienvenida a la universidad(text,btn, imagen) Lleva al inicio de la universidad)
 
-Seccion de alianzas de la UD(position absolute) - GRID 
+Seccion de alianzas de la UD(position absolute) - GRID  DONE
 
 Seccion aprende idiomas (BTN que lleva a un form para regustrarse y aprender con la UD)
 
@@ -14,3 +14,6 @@ Seccion aprende idiomas (BTN que lleva a un form para regustrarse y aprender con
 Seccion beneficios de estar en la UD(btn action)
 
 footer (Derechos de autor)
+
+Pending:
+Footer, enlazar etiqueta 'a', desplegar

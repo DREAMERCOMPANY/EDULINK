@@ -4,17 +4,325 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./Js/index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <script src="./Js/index.js" defer></script>
     <title>Edulink</title>
 </head>
-<body>
+<body class="font-sans">
+
+
     <!--header-->
-    <header>
+    <header class="container flex items-center justify-between w-full pt-4 px-4 relative ">
+
         
+            
+        <div class="group  w-24 h-24 bg-white shadow-2xl rounded-full  opacity-90 flex items-center justify-center">
+            <img class="w-20 h-20 cursor-pointer duration-200 shadow-lg rounded-full transition-all group-hover:scale-105 group-hover:-translate-y-0.5 object-contain group-hover:w-24 group-hover:h-24" src="./Assets/icons/iconUD.png " alt="logo UD">
+        </div>
+
+        <!--Items container-->
+
+        <div class="items-center justify-center space-x-8 hidden md:flex">
+            <!--items container-->
+
+            <div class="items-center justify-center space-x-4 flex">
+                <div class="flex flex-col group">
+                    <a href="#" class="text-xl font-medium cursor-pointer duration-200 transition-all group-hover:-translate-y-0.5 opacity-85 group-hover:opacity-100 ">Bienvenido</a>
+                    <div class="w-[85%] mx-auto h-0.5 bg-[#8C1919] opacity-90 rounded-sm hidden group-hover:block duration-200"></div>
+                </div>
+
+                <div class="flex flex-col group">
+                    <a href="#" class="text-xl font-medium cursor-pointer duration-200 transition-all group-hover:-translate-y-0.5 opacity-85 group-hover:opacity-100 ">Alianzas</a>
+                    <div class="w-[85%] mx-auto h-0.5 bg-[#8C1919] opacity-90 rounded-sm hidden group-hover:block duration-200"></div>
+                </div>
+
+                <div class="flex flex-col group">
+                    <a href="#" class="text-xl font-medium cursor-pointer duration-200 transition-all group-hover:-translate-y-0.5 opacity-85 group-hover:opacity-100 ">Idiomas</a>
+                    <div class="w-[85%] mx-auto h-0.5 bg-[#8C1919] opacity-90 rounded-sm hidden group-hover:block duration-200"></div>
+                </div>
+
+                <div class="flex flex-col group">
+                    <a href="#" class="text-xl font-medium cursor-pointer duration-200 transition-all group-hover:-translate-y-0.5 opacity-85 group-hover:opacity-100 ">Beneficios</a>
+                    <div class="w-[85%] mx-auto h-0.5 bg-[#8C1919] opacity-90 rounded-sm hidden group-hover:block duration-200"></div>
+                </div>
+
+                
+
+                
+            </div>
+
+            <!--btn container-->
+            <button class="py-3 px-6 font-medium text-xl bg-[#8C1919] opacity-90 hover:opacity-100 rounded-md hover:-translate-y-0.5 duration-200 ">Soporte</button>
+
+        </div>
+
+        <!--todo btn-->
+
+        <!-- Hamburger Button -->
+        <div class="lg:hidden">
+            <button
+              id="menu-btn"
+              type="button"
+              class="z-40 block hamburger lg:hidden focus:outline-none"
+            >
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
+            </button>
+          </div>
+
+
+        
+
+        <!--menu-->
+
+        <div id="menu" class="hidden  absolute left-6 flex-col right-6 top-32 bg-[#8C1919] mx-auto py-10 text-center rounded-lg z-40 px-8">
+            <a href="#" class="w-full text-white font-bold mb-4 capitalize">Features</a>
+            <a href="#" class="w-full text-white font-bold mb-4 capitalize">Pricing</a>
+            <a href="#" class="w-full text-white font-bold  capitalize pb-6 border-b border-white">Resources</a>
+            <a href="#" class="w-full text-white font-bold mb-8 pt-6 capitalize">Login</a>
+            <a href="#" class="w-full text-white font-bold bg-cyan py-5 rounded-full capitalize">sign up</a>
+           </div>
+
     </header>
 
-    <!--Main section-->
-    <main></main>
+
+ 
+
+      <!--Facultades-->
+
+      <section id="facultades">
+        <!--Creations container-->
+        <div class="max-w-6xl mx-auto my-32 px-4 md:px-0">
+          <!--Hero container-->
+          <div class="flex flex-col items-center justify-center md:justify-between mb-20 md:flex-row">
+            <h3 class="uppercase font-light text-4xl md:text-5xl">Facultades</h3>
+            
+                <a class="btn hidden md:block" href="https://www.udistrital.edu.co/nuestra-universidad/campus/facultades" target="_blank">Ver todo</a>
+            
+          </div>
+  
+          <!--Card container 1-->
+          <div class="card-container mb-8">
+  
+            <!--Card content 1-->
+            <div class="card-content relative group">
+              <!--Image content Desktop-->
+              <img src="./Assets/img/facultad_ASAB.png" alt="Asap facultad" class="image-card ">
+  
+               
+  
+              <!--White effect-->
+  
+              <div class="card-effect"></div> 
+  
+              <!--Text content-->
+              <h5 class="card-text ">Facultad ASAB<h5/>
+  
+            </div>
+  
+            <!--Card content 2-->
+            <div class="card-content relative group">
+              <!--Image content Desktop-->
+              <img src="./Assets/img/facultad_cienciasEducacion.png" alt="Arcade desktop" class="image-card ">
+  
+               
+  
+              <!--White effect-->
+  
+              <div class="card-effect"></div> 
+  
+              <!--Text content-->
+              <h5 class="card-text ">Facultad Ciencias Educación<h5/>
+  
+            </div>
+
+            <!--Card content 3-->
+            <div class="card-content relative group">
+                <!--Image content Desktop-->
+                <img src="./Assets/img/facultad_cienciasMatematicas.png" alt="Arcade desktop" class="image-card ">
+    
+                 
+    
+                <!--White effect-->
+    
+                <div class="card-effect"></div> 
+    
+                <!--Text content-->
+                <h5 class="card-text ">Facultad Ciencias Matematicas<h5/>
+    
+              </div>
+
+              <!--Card content 2-->
+            <div class="card-content relative group">
+                <!--Image content Desktop-->
+                <img src="./Assets/img/facultad_cienciasSalud.png" alt="Arcade desktop" class="image-card ">
+    
+                 
+    
+                <!--White effect-->
+    
+                <div class="card-effect"></div> 
+    
+                <!--Text content-->
+                <h5 class="card-text ">Facultad Ciencias Salud<h5/>
+    
+              </div>
+  
+           
+  
+          
+            
+          </div>
+
+          <!--Card container 2-->
+          <div class="card-container mb-8">
+  
+            <!--Card content 1-->
+            <div class="card-content relative group">
+              <!--Image content Desktop-->
+              <img src="./Assets/img/facultad_ingenieria.png" alt="Asap facultad" class="image-card ">
+  
+               
+  
+              <!--White effect-->
+  
+              <div class="card-effect"></div> 
+  
+              <!--Text content-->
+              <h5 class="card-text ">Facultad Ingenieria<h5/>
+  
+            </div>
+  
+            <!--Card content 2-->
+            <div class="card-content relative group">
+              <!--Image content Desktop-->
+              <img src="./Assets/img/facultad_medioAmbiente.png" alt="Arcade desktop" class="image-card ">
+  
+               
+  
+              <!--White effect-->
+  
+              <div class="card-effect"></div> 
+  
+              <!--Text content-->
+              <h5 class="card-text ">Facultad Medio Ambiente<h5/>
+  
+            </div>
+
+            <!--Card content 3-->
+            <div class="card-content relative group">
+                <!--Image content Desktop-->
+                <img src="./Assets/img/facultadTecnologica.png" alt="Arcade desktop" class="image-card ">
+    
+                 
+    
+                <!--White effect-->
+    
+                <div class="card-effect"></div> 
+    
+                <!--Text content-->
+                <h5 class="card-text ">Facultad Tecnologica<h5/>
+    
+              </div>
+
+          </div>
+  
+         
+  
+          
+  
+          <button class="btn w-full md:hidden">see all</button>
+  
+        </div>
+  
+      </section>
+
+      <!--Idiomas-->
+
+      <!--Stats section-->
+    <section id="stats" class="bg-gray-100 p-6">
+        <!--stats container-->
+        <div class="py-20 mx-auto">
+          <h5 class="text-4xl font-bold text-center mb-12">Aprende idiomas</h5>
+          <p class="text-gray-400 max-w-xs mx-auto text-center md:max-w-md">El ILUD te ofrece cursos de Inglés, Francés, Alemán, Italiano, Portugués, Mandarín, Español (ELE), con modalidad presencial, apoyados en un enfoque pedagógico basado en el aprendizaje significativo y una orientación hacia el auto aprendizaje.</p>
+        </div>
+      </section>
+  
+      
+      <!--Feature box section-->
+  
+      <section id="features" class="bg-gray-100 ">
+        <!--Features container-->
+        <div class=" px-6  pb-32 flex flex-col md:flex-row md:space-x-8 relative">
+          <!--Horizontal line-->
+          <div class="hidden absolute h-3 w-10/12 top-[26%] left-16 bg-cyan md:block"></div>
+  
+          <!--vertical line-->
+          <div class="absolute h-3/4 w-3 left-1/2  bg-cyan md:hidden"></div>
+  
+          <!--Box 1-->
+  
+          <div class="feature-box">
+            <!--image positioning-->
+            <div class="absolute -top-11 left-1/2 -ml-9  md:left-16 lg:-top-10 md:-top-10">
+              <!--image container-->
+              <div class=" flex items-center-justify-center">
+                <img class="w-20 h-20 rounded-full" src="./Assets/img/ingles.png" alt="icon brand">
+              </div>
+            </div>
+  
+            <h5 class="font-bold text-2xl text-center mb-10 mt-8 ">Ingles
+            </h5>
+            <p class="text-gray-400 max-w-md mx-auto text-center">El inglés te permite conectar con personas de todas partes del mundo y enriquecer tu vida.</p>
+            
+          </div>
+  
+          <!--Box 2-->
+  
+          <div class="feature-box mt-28 md:mt-8">
+            <!--image positioning-->
+            <div class="absolute -top-11 left-1/2 -ml-9  md:left-16 lg:-top-10 md:-top-10">
+              <!--image container-->
+              <div class=" flex items-center-justify-center ">
+                <img class="w-20 h-20 rounded-full" src="./Assets/img/frances.png" alt="icon brand">
+              </div>
+            </div>
+  
+            <h5 class="font-bold text-2xl text-center mb-10 mt-8">Frances
+            </h5>
+            <p class="text-gray-400 max-w-md mx-auto text-center">El francés te permite conectar con una rica cultura y un legado histórico.</p>
+            
+          </div>
+  
+          <!--Box 3-->
+  
+          <div class="feature-box mt-28 md:mt-16">
+            <!--image positioning-->
+            <div class="absolute -top-11 left-1/2 -ml-9  md:left-16 lg:-top-10 md:-top-10">
+              <!--image container-->
+              <div class=" flex items-center-justify-center">
+                <img class="w-20 h-20 rounded-full" src="./Assets/img/aleman.png" alt="icon brand">
+              </div>
+            </div>
+  
+            <h5 class="font-bold text-2xl text-center mb-10 mt-8">Aleman
+            </h5>
+            <p class="text-gray-400 max-w-md mx-auto text-center">¡Sprach auf! Aprende alemán y descubre un nuevo mundo!</p>
+            
+          </div>
+  
+           
+  
+          
+  
+  
+  
+  
+        </div>
+      </section>
 
     <!--Footer section-->
     <footer></footer>
