@@ -14,238 +14,271 @@
 
 
     <!--header-->
-    <header class="container flex items-center justify-between w-full pt-4 px-4 relative ">
+    <header class=" w-screen py-4 px-4  bg-black ">
 
-        
-            
-        <div class="group  w-24 h-24 bg-white shadow-2xl rounded-full  opacity-90 flex items-center justify-center">
-            <img class="w-20 h-20 cursor-pointer duration-200 shadow-lg rounded-full transition-all group-hover:scale-105 group-hover:-translate-y-0.5 object-contain group-hover:w-24 group-hover:h-24" src="./Assets/icons/iconUD.png " alt="logo UD">
-        </div>
+      <div class="container flex items-center justify-between relative">
 
-        <!--Items container-->
+        <div class="group  flex items-center justify-center">
+          <img class="w-14 h-14 cursor-pointer duration-200 shadow-lg rounded-lg transition-all group-hover:-translate-y-0.5  object-contain" src="./Assets/icons/iconUD.png " alt="logo UD">
+      </div>
 
-        <div class="items-center justify-center space-x-8 hidden md:flex">
-            <!--items container-->
+      <!--Items container-->
 
-            <div class="items-center justify-center space-x-4 flex">
-                <div class="flex flex-col group">
-                    <a href="#" class="text-xl font-medium cursor-pointer duration-200 transition-all group-hover:-translate-y-0.5 opacity-85 group-hover:opacity-100 ">Bienvenido</a>
-                    <div class="w-[85%] mx-auto h-0.5 bg-[#8C1919] opacity-90 rounded-sm hidden group-hover:block duration-200"></div>
-                </div>
+      <div class="items-center justify-center space-x-8 hidden md:flex">
+          <!--items container-->
 
-                <div class="flex flex-col group">
-                    <a href="#" class="text-xl font-medium cursor-pointer duration-200 transition-all group-hover:-translate-y-0.5 opacity-85 group-hover:opacity-100 ">Alianzas</a>
-                    <div class="w-[85%] mx-auto h-0.5 bg-[#8C1919] opacity-90 rounded-sm hidden group-hover:block duration-200"></div>
-                </div>
+          <div class="items-center justify-center space-x-4 flex text-white">
 
-                <div class="flex flex-col group">
-                    <a href="#" class="text-xl font-medium cursor-pointer duration-200 transition-all group-hover:-translate-y-0.5 opacity-85 group-hover:opacity-100 ">Idiomas</a>
-                    <div class="w-[85%] mx-auto h-0.5 bg-[#8C1919] opacity-90 rounded-sm hidden group-hover:block duration-200"></div>
-                </div>
+              <div class="flex flex-col group">
+                  <a href="#" class="text-xl font-medium cursor-pointer duration-200 transition-all group-hover:-translate-y-0.5 opacity-85 group-hover:opacity-100  ">Facultades</a>
+                  <div class="w-[85%] mx-auto h-0.5 bg-[#8C1919] opacity-90 rounded-sm hidden group-hover:block duration-200"></div>
+              </div>
 
-                <div class="flex flex-col group">
-                    <a href="#" class="text-xl font-medium cursor-pointer duration-200 transition-all group-hover:-translate-y-0.5 opacity-85 group-hover:opacity-100 ">Beneficios</a>
-                    <div class="w-[85%] mx-auto h-0.5 bg-[#8C1919] opacity-90 rounded-sm hidden group-hover:block duration-200"></div>
-                </div>
+              <div class="flex flex-col group">
+                  <a href="#" class="text-xl font-medium cursor-pointer duration-200 transition-all group-hover:-translate-y-0.5 opacity-85 group-hover:opacity-100 ">Alianzas</a>
+                  <div class="w-[85%] mx-auto h-0.5 bg-[#8C1919] opacity-90 rounded-sm hidden group-hover:block duration-200"></div>
+              </div>
 
-                
+              <div class="flex flex-col group">
+                  <a href="#" class="text-xl font-medium cursor-pointer duration-200 transition-all group-hover:-translate-y-0.5 opacity-85 group-hover:opacity-100 ">Idiomas</a>
+                  <div class="w-[85%] mx-auto h-0.5 bg-[#8C1919] opacity-90 rounded-sm hidden group-hover:block duration-200"></div>
+              </div>
 
-                
+              <div class="flex flex-col group">
+                <a href="#" class="text-xl font-medium cursor-pointer duration-200 transition-all group-hover:-translate-y-0.5 opacity-85 group-hover:opacity-100 ">Oportunidades</a>
+                <div class="w-[85%] mx-auto h-0.5 bg-[#8C1919] opacity-90 rounded-sm hidden group-hover:block duration-200"></div>
             </div>
 
-            <!--btn container-->
-            <button class="py-3 px-6 font-medium text-xl bg-[#8C1919] opacity-90 hover:opacity-100 rounded-md hover:-translate-y-0.5 duration-200 ">Soporte</button>
+              
+
+              
+          </div>
+
+          <!--btn container-->
+          <button class="btn-main">Soporte</button>
+
+      </div>
+
+      <!--todo btn-->
+
+      <!-- Hamburger Button -->
+      <div class="md:hidden">
+          <button
+            id="menu-btn"
+            type="button"
+            class="z-40 block hamburger lg:hidden focus:outline-none"
+          >
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+        </div>
+
+
+      
+
+      <!--menu-->
+
+      <div id="menu" class="hidden  absolute left-6 flex-col right-6 top-[72px]  bg-[#8C1919] mx-auto py-10 text-center rounded-lg z-40 px-8">
+          <a href="#" class="w-full text-white font-bold mb-4 capitalize">Facultades</a>
+          <a href="#" class="w-full text-white font-bold mb-4 capitalize">Alianzas</a>
+          <a href="#" class="w-full text-white font-bold mb-4 capitalize">Idiomas</a>
+          <a href="#" class="w-full text-white font-bold  capitalize pb-6 border-b border-white"></a>
+          <a href="#" class="w-full text-white font-bold mb-8 pt-6 capitalize">Oportunidades</a>
+          <a href="#" class="w-full opacity-85 text-white hover:opacity-100 font-bold bg-black py-5 rounded-full capitalize">Contactar</a>
+         </div>
+      </div>
+        
+            
+
+
+    </header>
+
+    <!--Bienvenida-->
+
+    <div class="w-screen bg-gray-100">
+ <div class="w-full container justify-center pb-8 pt-8 flex-col md:space-y-0  flex md:flex-row items-center space-y-72 md:justify-between px-4 min-h-screen md:min-h-full ">
+
+      <!--Contenedor imagen-->
+
+      <div class="max-w-md md:relative flex flex-col justify-center items-center" >
+        <img class=" w-96 rounded-md "  src="./Assets/img/ud.png" alt="">
+
+        <div class="md:max-w-sm max-w-xs  p-4 rounded-md bg-white md:shadow-inner shadow-[#3333] cursor-pointer duration-200 hover:scale-105 top-96 absolute md:top-[19%] md:-right-64" >
+          <div class="mx-auto"> 
+            <h5 class="text-4xl font-bold text-center mb-4 text-[#333333]">Conoce la UD</h5>
+            <p class="text-[#333333] max-w-xs mx-auto text-center md:max-w-md ">La Universidad Distrital Francisco José de Caldas (UD) es un espacio de innovación y formación integral. Con programas académicos que integran teoría y práctica, te invita a ser parte de una comunidad comprometida con el desarrollo social y académico. ¡Conoce la UD!</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn-main animate-bounce">Conoce más</button>
+
+    </div>
+
+    <section id="facultades">
+      <!--Creations container-->
+      <div class="max-w-6xl mx-auto mt-24 px-4 pb-8 md:px-0">
+        <!--Hero container-->
+        <div class="flex flex-col items-center justify-center md:justify-between mb-20 md:flex-row">
+          <h3 class="font-bold text-4xl md:text-5xl text-[#333333]">Facultades</h3>
+          
+              <a class="btn-main hidden md:block" href="https://www.udistrital.edu.co/nuestra-universidad/campus/facultades" target="_blank">Ver todo</a>
+          
+        </div>
+
+        <!--Card container 1-->
+        <div class="card-container mb-8">
+
+          <!--Card content 1-->
+          <div class="card-content relative group">
+            <!--Image content Desktop-->
+            <img src="./Assets/img/facultad_ASAB.png" alt="Asap facultad" class="image-card ">
+
+             
+
+            <!--White effect-->
+
+            <div class="card-effect"></div> 
+
+            <!--Text content-->
+            <h5 class="card-text ">Facultad ASAB<h5/>
+
+          </div>
+
+          <!--Card content 2-->
+          <div class="card-content relative group">
+            <!--Image content Desktop-->
+            <img src="./Assets/img/facultad_cienciasEducacion.png" alt="Arcade desktop" class="image-card ">
+
+             
+
+            <!--White effect-->
+
+            <div class="card-effect"></div> 
+
+            <!--Text content-->
+            <h5 class="card-text ">Facultad Ciencias Educación<h5/>
+
+          </div>
+
+          <!--Card content 3-->
+          <div class="card-content relative group">
+              <!--Image content Desktop-->
+              <img src="./Assets/img/facultad_cienciasMatematicas.png" alt="Arcade desktop" class="image-card ">
+  
+               
+  
+              <!--White effect-->
+  
+              <div class="card-effect"></div> 
+  
+              <!--Text content-->
+              <h5 class="card-text ">Facultad Ciencias Matematicas<h5/>
+  
+            </div>
+
+            <!--Card content 2-->
+          <div class="card-content relative group">
+              <!--Image content Desktop-->
+              <img src="./Assets/img/facultad_cienciasSalud.png" alt="Arcade desktop" class="image-card ">
+  
+               
+  
+              <!--White effect-->
+  
+              <div class="card-effect"></div> 
+  
+              <!--Text content-->
+              <h5 class="card-text ">Facultad Ciencias Salud<h5/>
+  
+            </div>
+
+         
+
+        
+          
+        </div>
+
+        <!--Card container 2-->
+        <div class="card-container mb-8">
+
+          <!--Card content 1-->
+          <div class="card-content relative group">
+            <!--Image content Desktop-->
+            <img src="./Assets/img/facultad_ingenieria.png" alt="Asap facultad" class="image-card ">
+
+             
+
+            <!--White effect-->
+
+            <div class="card-effect"></div> 
+
+            <!--Text content-->
+            <h5 class="card-text ">Facultad Ingenieria<h5/>
+
+          </div>
+
+          <!--Card content 2-->
+          <div class="card-content relative group">
+            <!--Image content Desktop-->
+            <img src="./Assets/img/facultad_medioAmbiente.png" alt="Arcade desktop" class="image-card ">
+
+             
+
+            <!--White effect-->
+
+            <div class="card-effect"></div> 
+
+            <!--Text content-->
+            <h5 class="card-text ">Facultad Medio Ambiente<h5/>
+
+          </div>
+
+          <!--Card content 3-->
+          <div class="card-content relative group">
+              <!--Image content Desktop-->
+              <img src="./Assets/img/facultadTecnologica.png" alt="Arcade desktop" class="image-card ">
+  
+               
+  
+              <!--White effect-->
+  
+              <div class="card-effect"></div> 
+  
+              <!--Text content-->
+              <h5 class="card-text ">Facultad Tecnologica<h5/>
+  
+            </div>
 
         </div>
 
-        <!--todo btn-->
-
-        <!-- Hamburger Button -->
-        <div class="lg:hidden">
-            <button
-              id="menu-btn"
-              type="button"
-              class="z-40 block hamburger lg:hidden focus:outline-none"
-            >
-              <span class="hamburger-top"></span>
-              <span class="hamburger-middle"></span>
-              <span class="hamburger-bottom"></span>
-            </button>
-          </div>
-
+       
 
         
 
-        <!--menu-->
+        <button class="btn-main w-full md:hidden">Ver facultades</button>
 
-        <div id="menu" class="hidden  absolute left-6 flex-col right-6 top-32 bg-[#8C1919] mx-auto py-10 text-center rounded-lg z-40 px-8">
-            <a href="#" class="w-full text-white font-bold mb-4 capitalize">Features</a>
-            <a href="#" class="w-full text-white font-bold mb-4 capitalize">Pricing</a>
-            <a href="#" class="w-full text-white font-bold  capitalize pb-6 border-b border-white">Resources</a>
-            <a href="#" class="w-full text-white font-bold mb-8 pt-6 capitalize">Login</a>
-            <a href="#" class="w-full text-white font-bold bg-cyan py-5 rounded-full capitalize">sign up</a>
-           </div>
+      </div>
 
-    </header>
+    </section>
+    </div>
+
+   
 
 
  
 
       <!--Facultades-->
 
-      <section id="facultades">
-        <!--Creations container-->
-        <div class="max-w-6xl mx-auto my-32 px-4 md:px-0">
-          <!--Hero container-->
-          <div class="flex flex-col items-center justify-center md:justify-between mb-20 md:flex-row">
-            <h3 class="uppercase font-light text-4xl md:text-5xl">Facultades</h3>
-            
-                <a class="btn hidden md:block" href="https://www.udistrital.edu.co/nuestra-universidad/campus/facultades" target="_blank">Ver todo</a>
-            
-          </div>
-  
-          <!--Card container 1-->
-          <div class="card-container mb-8">
-  
-            <!--Card content 1-->
-            <div class="card-content relative group">
-              <!--Image content Desktop-->
-              <img src="./Assets/img/facultad_ASAB.png" alt="Asap facultad" class="image-card ">
-  
-               
-  
-              <!--White effect-->
-  
-              <div class="card-effect"></div> 
-  
-              <!--Text content-->
-              <h5 class="card-text ">Facultad ASAB<h5/>
-  
-            </div>
-  
-            <!--Card content 2-->
-            <div class="card-content relative group">
-              <!--Image content Desktop-->
-              <img src="./Assets/img/facultad_cienciasEducacion.png" alt="Arcade desktop" class="image-card ">
-  
-               
-  
-              <!--White effect-->
-  
-              <div class="card-effect"></div> 
-  
-              <!--Text content-->
-              <h5 class="card-text ">Facultad Ciencias Educación<h5/>
-  
-            </div>
-
-            <!--Card content 3-->
-            <div class="card-content relative group">
-                <!--Image content Desktop-->
-                <img src="./Assets/img/facultad_cienciasMatematicas.png" alt="Arcade desktop" class="image-card ">
-    
-                 
-    
-                <!--White effect-->
-    
-                <div class="card-effect"></div> 
-    
-                <!--Text content-->
-                <h5 class="card-text ">Facultad Ciencias Matematicas<h5/>
-    
-              </div>
-
-              <!--Card content 2-->
-            <div class="card-content relative group">
-                <!--Image content Desktop-->
-                <img src="./Assets/img/facultad_cienciasSalud.png" alt="Arcade desktop" class="image-card ">
-    
-                 
-    
-                <!--White effect-->
-    
-                <div class="card-effect"></div> 
-    
-                <!--Text content-->
-                <h5 class="card-text ">Facultad Ciencias Salud<h5/>
-    
-              </div>
-  
-           
-  
-          
-            
-          </div>
-
-          <!--Card container 2-->
-          <div class="card-container mb-8">
-  
-            <!--Card content 1-->
-            <div class="card-content relative group">
-              <!--Image content Desktop-->
-              <img src="./Assets/img/facultad_ingenieria.png" alt="Asap facultad" class="image-card ">
-  
-               
-  
-              <!--White effect-->
-  
-              <div class="card-effect"></div> 
-  
-              <!--Text content-->
-              <h5 class="card-text ">Facultad Ingenieria<h5/>
-  
-            </div>
-  
-            <!--Card content 2-->
-            <div class="card-content relative group">
-              <!--Image content Desktop-->
-              <img src="./Assets/img/facultad_medioAmbiente.png" alt="Arcade desktop" class="image-card ">
-  
-               
-  
-              <!--White effect-->
-  
-              <div class="card-effect"></div> 
-  
-              <!--Text content-->
-              <h5 class="card-text ">Facultad Medio Ambiente<h5/>
-  
-            </div>
-
-            <!--Card content 3-->
-            <div class="card-content relative group">
-                <!--Image content Desktop-->
-                <img src="./Assets/img/facultadTecnologica.png" alt="Arcade desktop" class="image-card ">
-    
-                 
-    
-                <!--White effect-->
-    
-                <div class="card-effect"></div> 
-    
-                <!--Text content-->
-                <h5 class="card-text ">Facultad Tecnologica<h5/>
-    
-              </div>
-
-          </div>
-  
-         
-  
-          
-  
-          <button class="btn w-full md:hidden">see all</button>
-  
-        </div>
-  
-      </section>
+      
 
       <!--Idiomas-->
 
       <!--Stats section-->
-    <section id="stats" class="bg-gray-100 p-6">
+    <section class="bg-black  text-white pt-8">
         <!--stats container-->
-        <div class="py-20 mx-auto">
+        <div class="p-8 mx-auto">
           <h5 class="text-4xl font-bold text-center mb-12">Aprende idiomas</h5>
           <p class="text-gray-400 max-w-xs mx-auto text-center md:max-w-md">El ILUD te ofrece cursos de Inglés, Francés, Alemán, Italiano, Portugués, Mandarín, Español (ELE), con modalidad presencial, apoyados en un enfoque pedagógico basado en el aprendizaje significativo y una orientación hacia el auto aprendizaje.</p>
         </div>
@@ -254,14 +287,14 @@
       
       <!--Feature box section-->
   
-      <section id="features" class="bg-gray-100 ">
+      <section id="features" class="bg-black pt-20 pb-20 relative ">
         <!--Features container-->
-        <div class=" px-6  pb-32 flex flex-col md:flex-row md:space-x-8 relative">
+        <div class=" px-6  flex flex-col md:flex-row md:space-x-8 relative">
           <!--Horizontal line-->
-          <div class="hidden absolute h-3 w-10/12 top-[26%] left-16 bg-cyan md:block"></div>
+          <div class="hidden absolute h-3 w-10/12 top-[26%] left-16 bg-red md:block"></div>
   
           <!--vertical line-->
-          <div class="absolute h-3/4 w-3 left-1/2  bg-cyan md:hidden"></div>
+          <div class="absolute h-3/4 w-3 left-1/2  bg-red md:hidden"></div>
   
           <!--Box 1-->
   
@@ -269,8 +302,8 @@
             <!--image positioning-->
             <div class="absolute -top-11 left-1/2 -ml-9  md:left-16 lg:-top-10 md:-top-10">
               <!--image container-->
-              <div class=" flex items-center-justify-center">
-                <img class="w-20 h-20 rounded-full" src="./Assets/img/ingles.png" alt="icon brand">
+              <div class=" w-20 h-20 bg-softRed flex items-center justify-center rounded-full">
+                <img class="w-full h-full rounded-full" src="./Assets/img/bandera US.png" alt="icon brand">
               </div>
             </div>
   
@@ -286,8 +319,8 @@
             <!--image positioning-->
             <div class="absolute -top-11 left-1/2 -ml-9  md:left-16 lg:-top-10 md:-top-10">
               <!--image container-->
-              <div class=" flex items-center-justify-center ">
-                <img class="w-20 h-20 rounded-full" src="./Assets/img/frances.png" alt="icon brand">
+              <div class=" w-20 h-20 rounded-full flex items-center-justify-center bg-softRed ">
+                <img class="w-full h-full rounded-full" src="./Assets/img/bandera_francia.png" alt="icon brand">
               </div>
             </div>
   
@@ -303,8 +336,8 @@
             <!--image positioning-->
             <div class="absolute -top-11 left-1/2 -ml-9  md:left-16 lg:-top-10 md:-top-10">
               <!--image container-->
-              <div class=" flex items-center-justify-center">
-                <img class="w-20 h-20 rounded-full" src="./Assets/img/aleman.png" alt="icon brand">
+              <div class=" w-20 h-20 rounded-full bg-softRed flex items-center-justify-center">
+                <img class="w-full h-full rounded-full" src="./Assets/img/alemania.png" alt="icon brand">
               </div>
             </div>
   
@@ -322,9 +355,95 @@
   
   
         </div>
-      </section>
 
-    <!--Footer section-->
-    <footer></footer>
+        
+      </section>
+      
+     <!--Separacion seccion-->
+     
+     <div class="bg-black">
+      <div class="w-3/4 h-0.5 mx-auto bg-softRed rounded-md animate-pulse"></div>
+     </div>
+      
+
+    <!--Footer container-->
+    <footer class="bg-black text-white ">
+
+      <!--Flex container-->
+
+      <div class="max-w-6xl mx-auto pt-12 pb-20 flex flex-col space-y-10 md:space-y-0 md:flex-row items-center justify-center md:justify-between">
+        <!--Left content-->
+
+        <div class="flex flex-col space-y-4 items-center md:items-start justify-center ">
+          <!--Logo content-->
+          <h3 class="font-bold text-3xl md:ml-4">Edulink</h3>
+          <!--links content-->
+          <div class="flex flex-col space-y-6 md:space-y-0 md:flex-row md:space-x-4 md:ml-4 text-md">
+            <!--Item 1 -->
+            <a href="#" class="group">
+              <p class="font-medium group-hover:-translate-y-0.5">Facultades</p>
+              <div class="mx-2 group-hover:border-b group-hover:border-b-blue-50 duration-200"></div>
+            </a>
+
+            <!--Item 2 -->
+            <a href="#" class="group">
+              <p class=" font-medium group-hover:-translate-y-0.5">Alianzas</p>
+              <div class="mx-2 group-hover:border-b group-hover:border-b-blue-50 duration-200"></div>
+            </a>
+
+            <!--Item 3 -->
+            <a href="#" class="group">
+              <p class=" font-medium group-hover:-translate-y-0.5">Idiomas</p>
+              <div class="mx-2 group-hover:border-b group-hover:border-b-blue-50 duration-200"></div>
+            </a>
+
+            <!--Item 4 -->
+            <a href="#" class="group">
+              <p class=" font-medium group-hover:-translate-y-0.5">Oportunidades</p>
+              <div class="mx-2 group-hover:border-b group-hover:border-b-blue-50 duration-200"></div>
+            </a>
+
+           
+          </div>
+
+        </div>
+
+        <!--Right content-->
+
+        <div class="flex flex-col space-y-4 items-center md:items-start justify-center">
+          <!--Social media container-->
+          <div class="flex items-center justify-center space-x-4">
+
+            <!--Social icon 1 -->
+            <a href="#" class="group h-8">
+              <img src="./images/icon-facebook.svg" alt="" class="h-6 group-hover:scale-105 duration-200">
+            </a>
+
+            <!--Social icon 2 -->
+            <a href="#" class="group h-8">
+              <img src="./images/icon-twitter.svg" alt="" class="h-6 group-hover:scale-105 duration-200">
+            </a>
+
+            <!--Social icon 1 -->
+            <a href="#" class="group h-8">
+              <img src="./images/icon-pinterest.svg" alt="" class="h-6 group-hover:scale-105 duration-200">
+            </a>
+
+            <!--Social icon 1 -->
+            <a href="#" class="group h-8">
+              <img src="./images/icon-instagram.svg" alt="" class="h-6 group-hover:scale-105 duration-200">
+            </a>
+          </div>
+
+          <!--Rights container-->
+          <p class="font-light text-center   text-md text-gray-500" >&copy; 2025 Edulink. Todos los derechos reservados | Jhon Ramirez</p>
+        
+        </div>
+
+      </div>
+
+      
+
+    </footer>
 </body>
 </html>
