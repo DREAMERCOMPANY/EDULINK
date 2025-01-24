@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.bg-url{
+  background-image: url('./Assets/img/backgroundWelcome.jpeg')
+}
+
 @layer components{
   .btn-main{
     @apply py-3 px-6 font-medium text-xl bg-[#8C1919] opacity-80 hover:opacity-100 rounded-md hover:-translate-y-0.5 duration-200 text-white
@@ -92,6 +96,15 @@
     animation-timing-function: ease-in-out; 
     animation-fill-mode: forwards;
   }
+
+  /*Background image Welcome*/
+
+  
+  
+  
+  
+  
+  
 
   @keyframes animateMenu{
     from{

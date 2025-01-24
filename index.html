@@ -16,9 +16,19 @@
 </head>
 <body class="font-sans">
 
+ 
+
+  <div>
+
+    <div class="bg-img"></div>
+
+    <div id="blur" class=" hidden w-screen h-screen absolute blur-3xl bg-red/50 z-30"></div>
+    
+
 
     <!--header-->
-    <header class=" w-screen py-4 px-4  bg-black ">
+    <header class=" w-screen py-4 px-4  bg-black/70 ">
+      
 
       <div class="container flex items-center justify-between relative">
 
@@ -66,7 +76,7 @@
       <!--todo btn-->
 
       <!-- Hamburger Button -->
-      <div class="md:hidden">
+      <div class="md:hidden z-40">
           <button
             id="menu-btn"
             type="button"
@@ -83,13 +93,13 @@
 
       <!--menu-->
 
-      <div id="menu" class=" hidden w-full absolute translate-x-[110%] flex-col right-6 top-[72px]  bg-[#8C1919] mx-auto py-10 text-center rounded-lg z-40 px-8">
+      <div id="menu" class=" hidden w-3/4 absolute translate-x-[110%] flex-col right-6 top-[72px]  bg-[#8C1919] mx-auto py-10 text-center shadow-inner shadow-white rounded-lg z-40 px-8">
           <a href="#" class="w-full text-white font-bold mb-4 capitalize">Facultades</a>
           <a href="#" class="w-full text-white font-bold mb-4 capitalize">Alianzas</a>
           <a href="#" class="w-full text-white font-bold mb-4 capitalize">Idiomas</a>
           <a href="#" class="w-full text-white font-bold  capitalize pb-6 border-b border-white"></a>
           <a href="#" class="w-full text-white font-bold mb-8 pt-6 capitalize">Oportunidades</a>
-          <a href="#" class="w-full opacity-85 text-white hover:opacity-100 font-bold bg-black py-5 rounded-full capitalize">Contactar</a>
+          <a href="#" class="w-full opacity-85 text-white hover:opacity-100 font-bold bg-black/70 py-5 rounded-full capitalize">Contactar</a>
          </div>
       </div>
         
@@ -100,15 +110,18 @@
 
     <!--Bienvenida-->
 
-    <div class="w-screen bg-gray-100">
- <div class="w-full container justify-center pb-8 pt-8 flex-col md:space-y-0  flex md:flex-row items-center space-y-72 md:justify-between px-4 min-h-screen md:min-h-full ">
+    <div class="" >
+
+      <div class="relative ">
+        <span class=" bg-cover bg-center bg-no-repeat w-full h-full absolute blur-sm"  style="background-image: url('./Assets/img/backgroundWelcome.jpeg');"></span> 
+        <div class="w-full container justify-center pb-8 pt-8 flex-col md:space-y-0  flex md:flex-row items-center space-y-72 md:justify-between px-4 min-h-screen md:min-h-full ">
 
       <!--Contenedor imagen-->
 
       <div class="max-w-md md:relative flex flex-col justify-center items-center" >
-        <img class=" w-96 rounded-md "  src="./Assets/img/ud.png" alt="">
+        <img class=" w-96 rounded-md z-10 "  src="./Assets/img/ud.png" alt="">
 
-        <div class="md:max-w-sm max-w-xs  p-4 rounded-md bg-white md:shadow-inner shadow-[#3333] cursor-pointer duration-200 hover:scale-105 top-96 absolute md:top-[19%] md:-right-64" >
+        <div class="md:max-w-sm max-w-xs  p-4 rounded-md bg-white md:shadow-inner shadow-[#3333] cursor-pointer duration-200 hover:scale-105 top-80 z-20 absolute md:top-[19%] md:-right-64" >
           <div class="mx-auto"> 
             <h5 class="text-4xl font-bold text-center mb-4 text-[#333333]">Conoce la UD</h5>
             <p class="text-[#333333] max-w-xs mx-auto text-center md:max-w-md ">La Universidad Distrital Francisco José de Caldas (UD) es un espacio de innovación y formación integral. Con programas académicos que integran teoría y práctica, te invita a ser parte de una comunidad comprometida con el desarrollo social y académico. ¡Conoce la UD!</p>
@@ -116,9 +129,11 @@
         </div>
       </div>
 
-      <button class="btn-main animate-bounce">Conoce más</button>
+      <button class="btn-main mt-52 relative animate-bounce">Conoce más</button>
 
     </div>
+      </div>
+ 
 
     <section id="facultades">
       <!--Creations container-->
@@ -266,192 +281,192 @@
       </div>
 
     </section>
-    </div>
 
-   
-
-
- 
-
+    
       <!--Facultades-->
 
-      
+      <!--Last section gradiente-->
 
-      <!--Idiomas-->
+<div class="bg-gradient-to-b from-[#8C1919] to-black/95">
 
-      <!--Stats section-->
-    <section class="bg-black  text-white pt-8">
-        <!--stats container-->
-        <div class="p-8 mx-auto">
-          <h5 class="text-4xl font-bold text-center mb-12">Aprende idiomas</h5>
-          <p class="text-gray-400 max-w-xs mx-auto text-center md:max-w-md">El ILUD te ofrece cursos de Inglés, Francés, Alemán, Italiano, Portugués, Mandarín, Español (ELE), con modalidad presencial, apoyados en un enfoque pedagógico basado en el aprendizaje significativo y una orientación hacia el auto aprendizaje.</p>
-        </div>
-      </section>
+  <!--Stats section-->
+  <section class=  text-white pt-8">
+    <!--stats container-->
+    <div class="p-8 mx-auto">
+      <h5 class="text-4xl font-bold text-center mb-12">Aprende idiomas</h5>
+      <p class="text-gray-400 max-w-xs mx-auto text-center md:max-w-md">El ILUD te ofrece cursos de Inglés, Francés, Alemán, Italiano, Portugués, Mandarín, Español (ELE), con modalidad presencial, apoyados en un enfoque pedagógico basado en el aprendizaje significativo y una orientación hacia el auto aprendizaje.</p>
+    </div>
+  </section>
 
-       <!--Separacion seccion-->
-     <div class="bg-black">
-      <div class="w-3/4 h-0.5 mx-auto bg-softRed rounded-md animate-pulse md:hidden"></div>
-     </div>
-  
-      
-      <!--Feature box section-->
-  
-      <section id="features" class="bg-black pt-20 pb-20 relative ">
-        <!--Features container-->
-        <div class=" px-6  flex flex-col md:flex-row md:space-x-8 relative">
-          <!--Horizontal line-->
-          <div class="hidden absolute h-3 w-10/12 top-[26%] left-16 bg-red md:block"></div>
-  
-          <!--vertical line-->
-          <div class="absolute h-3/4 w-3 left-1/2  bg-red md:hidden"></div>
-  
-          <!--Box 1-->
-  
-          <div class="feature-box">
-            <!--image positioning-->
-            <div class="absolute -top-11 left-1/2 -ml-9  md:left-16 lg:-top-10 md:-top-10">
-              <!--image container-->
-              <div class=" w-20 h-20 bg-softRed flex items-center justify-center rounded-full">
-                <img class="w-full h-full rounded-full" src="./Assets/img/bandera US.png" alt="icon brand">
-              </div>
-            </div>
-  
-            <h5 class="font-bold text-2xl text-center mb-10 mt-8 ">Ingles
-            </h5>
-            <p class="text-gray-400 max-w-md mx-auto text-center">El inglés te permite conectar con personas de todas partes del mundo y enriquecer tu vida.</p>
-            
+   <!--Separacion seccion-->
+ <div class="">
+  <div class="w-3/4 h-0.5 mx-auto bg-softRed rounded-md animate-pulse md:hidden"></div>
+ </div>
+  <!--Feature box section-->
+
+  <section id="features" class=" pt-20 pb-20 relative ">
+    <!--Features container-->
+    <div class=" px-6  flex flex-col md:flex-row md:space-x-8 relative">
+      <!--Horizontal line-->
+      <div class="hidden absolute h-3 w-10/12 top-[26%] left-16 bg-red md:block"></div>
+
+      <!--vertical line-->
+      <div class="absolute h-3/4 w-3 left-1/2  bg-red md:hidden"></div>
+
+      <!--Box 1-->
+
+      <div class="feature-box">
+        <!--image positioning-->
+        <div class="absolute -top-11 left-1/2 -ml-9  md:left-16 lg:-top-10 md:-top-10">
+          <!--image container-->
+          <div class=" w-20 h-20 bg-softRed flex items-center justify-center rounded-full">
+            <img class="w-full h-full rounded-full" src="./Assets/img/bandera US.png" alt="icon brand">
           </div>
-  
-          <!--Box 2-->
-  
-          <div class="feature-box mt-28 md:mt-8">
-            <!--image positioning-->
-            <div class="absolute -top-11 left-1/2 -ml-9  md:left-16 lg:-top-10 md:-top-10">
-              <!--image container-->
-              <div class=" w-20 h-20 rounded-full flex items-center-justify-center bg-softRed ">
-                <img class="w-full h-full rounded-full" src="./Assets/img/bandera_francia.png" alt="icon brand">
-              </div>
-            </div>
-  
-            <h5 class="font-bold text-2xl text-center mb-10 mt-8">Frances
-            </h5>
-            <p class="text-gray-400 max-w-md mx-auto text-center">El francés te permite conectar con una rica cultura y un legado histórico.</p>
-            
-          </div>
-  
-          <!--Box 3-->
-  
-          <div class="feature-box mt-28 md:mt-16">
-            <!--image positioning-->
-            <div class="absolute -top-11 left-1/2 -ml-9  md:left-16 lg:-top-10 md:-top-10">
-              <!--image container-->
-              <div class=" w-20 h-20 rounded-full bg-softRed flex items-center-justify-center">
-                <img class="w-full h-full rounded-full" src="./Assets/img/alemania.png" alt="icon brand">
-              </div>
-            </div>
-  
-            <h5 class="font-bold text-2xl text-center mb-10 mt-8">Aleman
-            </h5>
-            <p class="text-gray-400 max-w-md mx-auto text-center">¡Sprach auf! Aprende alemán y descubre un nuevo mundo!</p>
-            
-          </div>
-  
-           
-  
-          
-  
-  
-  
-  
         </div>
 
+        <h5 class="font-bold text-2xl text-center mb-10 mt-8 ">Ingles
+        </h5>
+        <p class="text-gray-400 max-w-md mx-auto text-center">El inglés te permite conectar con personas de todas partes del mundo y enriquecer tu vida.</p>
         
-      </section>
-      
-     <!--Separacion seccion-->
-     <div class="bg-black">
-      <div class="w-3/4 h-0.5 mx-auto bg-softRed rounded-md animate-pulse md:hidden"></div>
-     </div>
-      
-
-    <!--Footer container-->
-    <footer class="bg-black text-white ">
-
-      <!--Flex container-->
-
-      <div class="max-w-6xl mx-auto pt-12 pb-20 flex flex-col space-y-10 md:space-y-0 md:flex-row items-center justify-center md:justify-between">
-        <!--Left content-->
-
-        <div class="flex flex-col space-y-4 items-center md:items-start justify-center ">
-          <!--Logo content-->
-          <h3 class="font-bold text-3xl md:ml-4">Edulink</h3>
-          <!--links content-->
-          <div class="flex flex-col space-y-6 md:space-y-0 md:flex-row md:space-x-4 md:ml-4 text-md">
-            <!--Item 1 -->
-            <a href="#" class="group">
-              <p class="font-medium group-hover:-translate-y-0.5">Facultades</p>
-              <div class="mx-2 group-hover:border-b group-hover:border-b-blue-50 duration-200"></div>
-            </a>
-
-            <!--Item 2 -->
-            <a href="#" class="group">
-              <p class=" font-medium group-hover:-translate-y-0.5">Alianzas</p>
-              <div class="mx-2 group-hover:border-b group-hover:border-b-blue-50 duration-200"></div>
-            </a>
-
-            <!--Item 3 -->
-            <a href="#" class="group">
-              <p class=" font-medium group-hover:-translate-y-0.5">Idiomas</p>
-              <div class="mx-2 group-hover:border-b group-hover:border-b-blue-50 duration-200"></div>
-            </a>
-
-            <!--Item 4 -->
-            <a href="#" class="group">
-              <p class=" font-medium group-hover:-translate-y-0.5">Oportunidades</p>
-              <div class="mx-2 group-hover:border-b group-hover:border-b-blue-50 duration-200"></div>
-            </a>
-
-           
-          </div>
-
-        </div>
-
-        <!--Right content-->
-
-        <div class="flex flex-col space-y-4 items-center md:items-start justify-center">
-          <!--Social media container-->
-          <div class="flex items-center justify-center space-x-4">
-
-            <!--Social icon 1 -->
-            <a href="#" class="group h-8">
-              <img src="./images/icon-facebook.svg" alt="" class="h-6 group-hover:scale-105 duration-200">
-            </a>
-
-            <!--Social icon 2 -->
-            <a href="#" class="group h-8">
-              <img src="./images/icon-twitter.svg" alt="" class="h-6 group-hover:scale-105 duration-200">
-            </a>
-
-            <!--Social icon 1 -->
-            <a href="#" class="group h-8">
-              <img src="./images/icon-pinterest.svg" alt="" class="h-6 group-hover:scale-105 duration-200">
-            </a>
-
-            <!--Social icon 1 -->
-            <a href="#" class="group h-8">
-              <img src="./images/icon-instagram.svg" alt="" class="h-6 group-hover:scale-105 duration-200">
-            </a>
-          </div>
-
-          <!--Rights container-->
-          <p class="font-light text-center   text-md text-gray-500" >&copy; 2025 Edulink. Todos los derechos reservados | Jhon Ramirez</p>
-        
-        </div>
-
       </div>
 
+      <!--Box 2-->
+
+      <div class="feature-box mt-28 md:mt-8">
+        <!--image positioning-->
+        <div class="absolute -top-11 left-1/2 -ml-9  md:left-16 lg:-top-10 md:-top-10">
+          <!--image container-->
+          <div class=" w-20 h-20 rounded-full flex items-center-justify-center bg-softRed ">
+            <img class="w-full h-full rounded-full" src="./Assets/img/bandera_francia.png" alt="icon brand">
+          </div>
+        </div>
+
+        <h5 class="font-bold text-2xl text-center mb-10 mt-8">Frances
+        </h5>
+        <p class="text-gray-400 max-w-md mx-auto text-center">El francés te permite conectar con una rica cultura y un legado histórico.</p>
+        
+      </div>
+
+      <!--Box 3-->
+
+      <div class="feature-box mt-28 md:mt-16">
+        <!--image positioning-->
+        <div class="absolute -top-11 left-1/2 -ml-9  md:left-16 lg:-top-10 md:-top-10">
+          <!--image container-->
+          <div class=" w-20 h-20 rounded-full bg-softRed flex items-center-justify-center">
+            <img class="w-full h-full rounded-full" src="./Assets/img/alemania.png" alt="icon brand">
+          </div>
+        </div>
+
+        <h5 class="font-bold text-2xl text-center mb-10 mt-8">Aleman
+        </h5>
+        <p class="text-gray-400 max-w-md mx-auto text-center">¡Sprach auf! Aprende alemán y descubre un nuevo mundo!</p>
+        
+      </div>
+
+       
+
       
 
-    </footer>
+
+
+
+    </div>
+
+    
+  </section>
+  
+ <!--Separacion seccion-->
+ <div class="">
+  <div class="w-3/4 h-0.5 mx-auto bg-softRed rounded-md animate-pulse md:hidden"></div>
+ </div>
+  
+<!--Footer container-->
+<footer class=" text-white ">
+
+  <!--Flex container-->
+
+  <div class="max-w-6xl mx-auto pt-12 pb-20 flex flex-col space-y-10 md:space-y-0 md:flex-row items-center justify-center md:justify-between">
+    <!--Left content-->
+
+    <div class="flex flex-col space-y-4 items-center md:items-start justify-center ">
+      <!--Logo content-->
+      <h3 class="font-bold text-3xl md:ml-4">Edulink</h3>
+      <!--links content-->
+      <div class="flex flex-col space-y-6 md:space-y-0 md:flex-row md:space-x-4 md:ml-4 text-md">
+        <!--Item 1 -->
+        <a href="#" class="group">
+          <p class="font-medium group-hover:-translate-y-0.5">Facultades</p>
+          <div class="mx-2 group-hover:border-b group-hover:border-b-blue-50 duration-200"></div>
+        </a>
+
+        <!--Item 2 -->
+        <a href="#" class="group">
+          <p class=" font-medium group-hover:-translate-y-0.5">Alianzas</p>
+          <div class="mx-2 group-hover:border-b group-hover:border-b-blue-50 duration-200"></div>
+        </a>
+
+        <!--Item 3 -->
+        <a href="#" class="group">
+          <p class=" font-medium group-hover:-translate-y-0.5">Idiomas</p>
+          <div class="mx-2 group-hover:border-b group-hover:border-b-blue-50 duration-200"></div>
+        </a>
+
+        <!--Item 4 -->
+        <a href="#" class="group">
+          <p class=" font-medium group-hover:-translate-y-0.5">Oportunidades</p>
+          <div class="mx-2 group-hover:border-b group-hover:border-b-blue-50 duration-200"></div>
+        </a>
+
+       
+      </div>
+
+    </div>
+
+    <!--Right content-->
+
+    <div class="flex flex-col space-y-4 items-center md:items-start justify-center">
+      <!--Social media container-->
+      <div class="flex items-center justify-center space-x-4">
+
+        <!--Social icon 1 -->
+        <a href="#" class="group h-8">
+          <img src="./images/icon-facebook.svg" alt="" class="h-6 group-hover:scale-105 duration-200">
+        </a>
+
+        <!--Social icon 2 -->
+        <a href="#" class="group h-8">
+          <img src="./images/icon-twitter.svg" alt="" class="h-6 group-hover:scale-105 duration-200">
+        </a>
+
+        <!--Social icon 1 -->
+        <a href="#" class="group h-8">
+          <img src="./images/icon-pinterest.svg" alt="" class="h-6 group-hover:scale-105 duration-200">
+        </a>
+
+        <!--Social icon 1 -->
+        <a href="#" class="group h-8">
+          <img src="./images/icon-instagram.svg" alt="" class="h-6 group-hover:scale-105 duration-200">
+        </a>
+      </div>
+
+      <!--Rights container-->
+      <p class="font-light text-center   text-md text-gray-500" >&copy; 2025 Edulink. Todos los derechos reservados | Jhon Ramirez</p>
+    
+    </div>
+
+  </div>
+
+  
+
+</footer>
+
+</div>
+
+      
+  </div>
+
+
+    
 </body>
 </html>
