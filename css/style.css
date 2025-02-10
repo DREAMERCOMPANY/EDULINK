@@ -1535,6 +1535,14 @@ video {
   .sm\:w-3\/4 {
     width: 75%;
   }
+
+  .sm\:w-full {
+    width: 100%;
+  }
+
+  .sm\:w-1\/2 {
+    width: 50%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1584,6 +1592,14 @@ video {
 
   .md\:min-h-full {
     min-height: 100%;
+  }
+
+  .md\:w-3\/12 {
+    width: 25%;
+  }
+
+  .md\:w-1\/2 {
+    width: 50%;
   }
 
   .md\:max-w-md {
