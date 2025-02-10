@@ -49,19 +49,16 @@
               </div>
 
               <div class="flex flex-col group">
-                  <a href="#" class="text-xl font-medium cursor-pointer duration-200 transition-all group-hover:-translate-y-0.5 opacity-85 group-hover:opacity-100 ">Alianzas</a>
+                  <a href="#" class="text-xl font-medium cursor-pointer duration-200 transition-all group-hover:-translate-y-0.5 opacity-85 group-hover:opacity-100 ">Parqueadero</a>
                   <div class="w-[85%] mx-auto h-0.5 bg-red opacity-90 rounded-sm hidden group-hover:block duration-200"></div>
               </div>
 
               <div class="flex flex-col group">
-                  <a href="#" class="text-xl font-medium cursor-pointer duration-200 transition-all group-hover:-translate-y-0.5 opacity-85 group-hover:opacity-100 ">Idiomas</a>
+                  <a href="#" class="text-xl font-medium cursor-pointer duration-200 transition-all group-hover:-translate-y-0.5 opacity-85 group-hover:opacity-100 ">Registro</a>
                   <div class="w-[85%] mx-auto h-0.5 bg-red opacity-90 rounded-sm hidden group-hover:block duration-200"></div>
               </div>
 
-              <div class="flex flex-col group">
-                <a href="#" class="text-xl font-medium cursor-pointer duration-200 transition-all group-hover:-translate-y-0.5 opacity-85 group-hover:opacity-100 ">Oportunidades</a>
-                <div class="w-[85%] mx-auto h-0.5 bg-red opacity-90 rounded-sm hidden group-hover:block duration-200"></div>
-            </div>
+              
 
               
 
@@ -69,7 +66,7 @@
           </div>
 
           <!--btn container-->
-          <button class="btn-main">Soporte</button>
+          <button class="btn-main"><a href="#registro">Registrar</a></button>
 
       </div>
 
@@ -95,11 +92,11 @@
 
       <div id="menu" class=" hidden w-3/4 absolute translate-x-[110%] flex-col right-6 top-[72px]  bg-[#8C1919] mx-auto py-10 text-center shadow-inner shadow-white rounded-lg z-40 px-8">
           <a href="#" class="w-full text-white font-bold mb-4 capitalize">Facultades</a>
-          <a href="#" class="w-full text-white font-bold mb-4 capitalize">Alianzas</a>
-          <a href="#" class="w-full text-white font-bold mb-4 capitalize">Idiomas</a>
+          <a href="#" class="w-full text-white font-bold mb-4 capitalize">parqueadero</a>
+      
           <a href="#" class="w-full text-white font-bold  capitalize pb-6 border-b border-white"></a>
-          <a href="#" class="w-full text-white font-bold mb-8 pt-6 capitalize">Oportunidades</a>
-          <a href="#" class="w-full opacity-85 text-white hover:opacity-100 font-bold bg-black/70 py-5 rounded-full capitalize">Contactar</a>
+          <a href="#" class="w-full text-white font-bold mb-8 pt-6 capitalize">Registro</a>
+          <a href="#registro" class="w-full opacity-85 text-white hover:opacity-100 font-bold bg-black/70 py-5 rounded-full capitalize">Registrar</a>
          </div>
       </div>
         
@@ -123,13 +120,13 @@
 
         <div class="md:max-w-sm max-w-xs  p-4 rounded-md bg-white md:shadow-inner shadow-[#3333] cursor-pointer duration-200 hover:scale-105 top-80 z-20 absolute md:top-[19%] md:-right-64" >
           <div class="mx-auto"> 
-            <h5 class="text-4xl font-bold text-center mb-4 text-[#333333]">Conoce la UD</h5>
-            <p class="text-[#333333] max-w-xs mx-auto text-center md:max-w-md ">La Universidad Distrital Francisco José de Caldas (UD) es un espacio de innovación y formación integral. Con programas académicos que integran teoría y práctica, te invita a ser parte de una comunidad comprometida con el desarrollo social y académico. ¡Conoce la UD!</p>
+            <h5 class="text-4xl font-bold text-center mb-4 text-[#333333]">Bienvenido</h5>
+            <p class="text-[#333333] max-w-xs mx-auto text-center md:max-w-md ">Registra tu vehículo de manera fácil y segura para agilizar tu acceso y disfrutar de una experiencia organizada y sin contratiempos.</p>
           </div>
         </div>
       </div>
 
-      <button class="btn-main mt-52 relative animate-bounce">Conoce más</button>
+      <button class="btn-main mt-52 relative animate-bounce"><a href="#registro">Conoce más</a></button>
 
     </div>
       </div>
@@ -287,14 +284,47 @@
 
       <!--Last section gradiente-->
 
+      <!-- Registration Form -->
+      <section id="registro" class="container mx-auto px-4 py-16 bg-white rounded-lg shadow-md">
+        <h2 class="text-4xl font-bold text-center mb-8">Registralo aqui</h2>
+        <form id="parking-registration-form" class="w-full space-y-6 flex flex-col items-center justify-center bg-white">
+            <div class="w-full flex flex-col items-center">
+                <label for="name" class="sm:w-3/4 w-3/12 block text-sm font-medium ">Nombres</label>
+                <input type="text" id="name" name="name" class="sm:w-3/4 w-3/12 border border-gray-300 p-2 rounded-md hover:outline-none focus:text-gray-500 focus:border-red focus:border-1 focus:shadow-sm focus:shadow-softRed focus:animate-pulse outline-none " required>
+            </div>
+
+            <div class="w-full flex flex-col items-center">
+              <label for="name" class="sm:w-3/4 w-3/12 block text-sm font-medium ">Apellidos</label>
+              <input type="text" id="name" name="name" class="sm:w-3/4 w-3/12 border border-gray-300 p-2 rounded-md hover:outline-none focus:text-gray-500 focus:border-red focus:border-1 focus:shadow-sm focus:shadow-softRed focus:animate-pulse outline-none " required>
+          </div>
+
+          <div class="w-full flex flex-col items-center">
+            <label for="name" class="sm:w-3/4 w-3/12 block text-sm font-medium ">Correo UD</label>
+            <input type="text" id="name" name="name" class="sm:w-3/4 w-3/12 border border-gray-300 p-2 rounded-md hover:outline-none focus:text-gray-500 focus:border-red focus:border-1 focus:shadow-sm focus:shadow-softRed focus:animate-pulse outline-none " required>
+        </div>
+
+        <div class="w-full flex flex-col items-center">
+          <label for="vehicle" class="w-3/12 sm:w-3/4 block text-sm font-medium">Tipo de Vehículo</label>
+          <select id="vehicle" name="vehicle" class="w-3/12 sm:w-3/4 border border-gray-300 p-2 rounded-md hover:outline-none focus:text-gray-500 focus:border-red focus:border-1 focus:shadow-sm focus:shadow-softRed focus:animate-pulse outline-none">
+              <option value="">Selecciona una opción</option>
+              <option value="car">Carro</option>
+              <option value="motorcycle">Motocicleta</option>
+              <option value="bicycle">Bicicleta</option>
+          </select>
+      </div>
+            
+            <button type="submit" class="btn-main w-1/2 ">Registrar</button>
+        </form>
+    </section>
+
 <div class="bg-gradient-to-b from-[#8C1919] to-black/95">
 
   <!--Stats section-->
   <section class=  text-white pt-8">
     <!--stats container-->
     <div class="p-8 mx-auto">
-      <h5 class="text-4xl font-bold text-center mb-12">Aprende idiomas</h5>
-      <p class="text-gray-400 max-w-xs mx-auto text-center md:max-w-md">El ILUD te ofrece cursos de Inglés, Francés, Alemán, Italiano, Portugués, Mandarín, Español (ELE), con modalidad presencial, apoyados en un enfoque pedagógico basado en el aprendizaje significativo y una orientación hacia el auto aprendizaje.</p>
+      <h5 class="text-4xl font-bold text-center mb-12">Hazlo facil aqui</h5>
+      <p class="text-gray-400 max-w-xs mx-auto text-center md:max-w-md">Registra tu vehículo sin filas ni contratiempos, con comodidad y rapidez desde cualquier lugar.</p>
     </div>
   </section>
 
@@ -324,9 +354,9 @@
           </div>
         </div>
 
-        <h5 class="font-bold text-2xl text-center mb-10 mt-8 ">Ingles
+        <h5 class="font-bold text-2xl text-center mb-10 mt-8 ">Rapidez
         </h5>
-        <p class="text-gray-400 max-w-md mx-auto text-center">El inglés te permite conectar con personas de todas partes del mundo y enriquecer tu vida.</p>
+        <p class="text-gray-400 max-w-md mx-auto text-center">Ahorra tiempo registrando tu vehículo en solo minutos.</p>
         
       </div>
 
@@ -341,9 +371,9 @@
           </div>
         </div>
 
-        <h5 class="font-bold text-2xl text-center mb-10 mt-8">Frances
+        <h5 class="font-bold text-2xl text-center mb-10 mt-8">Comodidad
         </h5>
-        <p class="text-gray-400 max-w-md mx-auto text-center">El francés te permite conectar con una rica cultura y un legado histórico.</p>
+        <p class="text-gray-400 max-w-md mx-auto text-center">Haz el registro desde donde prefieras, sin necesidad de desplazarte.</p>
         
       </div>
 
@@ -358,9 +388,9 @@
           </div>
         </div>
 
-        <h5 class="font-bold text-2xl text-center mb-10 mt-8">Aleman
+        <h5 class="font-bold text-2xl text-center mb-10 mt-8">Eficiencia
         </h5>
-        <p class="text-gray-400 max-w-md mx-auto text-center">¡Sprach auf! Aprende alemán y descubre un nuevo mundo!</p>
+        <p class="text-gray-400 max-w-md mx-auto text-center">Disfruta de un acceso organizado y sin complicaciones.</p>
         
       </div>
 
@@ -391,7 +421,7 @@
 
     <div class="flex flex-col space-y-4 items-center md:items-start justify-center ">
       <!--Logo content-->
-      <h3 class="font-bold text-3xl md:ml-4">Edulink</h3>
+      <h3 class="font-bold text-3xl md:ml-4">Unipark Bosa</h3>
       <!--links content-->
       <div class="flex flex-col space-y-6 md:space-y-0 md:flex-row md:space-x-4 md:ml-4 text-md">
         <!--Item 1 -->
@@ -402,21 +432,17 @@
 
         <!--Item 2 -->
         <a href="#" class="group">
-          <p class=" font-medium group-hover:-translate-y-0.5">Alianzas</p>
+          <p class=" font-medium group-hover:-translate-y-0.5">Parqueadero</p>
           <div class="mx-2 group-hover:border-b group-hover:border-b-blue-50 duration-200"></div>
         </a>
 
         <!--Item 3 -->
         <a href="#" class="group">
-          <p class=" font-medium group-hover:-translate-y-0.5">Idiomas</p>
+          <p class=" font-medium group-hover:-translate-y-0.5">Registro</p>
           <div class="mx-2 group-hover:border-b group-hover:border-b-blue-50 duration-200"></div>
         </a>
 
-        <!--Item 4 -->
-        <a href="#" class="group">
-          <p class=" font-medium group-hover:-translate-y-0.5">Oportunidades</p>
-          <div class="mx-2 group-hover:border-b group-hover:border-b-blue-50 duration-200"></div>
-        </a>
+       
 
        
       </div>
@@ -451,7 +477,7 @@
       </div>
 
       <!--Rights container-->
-      <p class="font-light text-center   text-md text-gray-500" >&copy; 2025 Edulink. Todos los derechos reservados | Jhon Ramirez</p>
+      <p class="font-light text-center   text-md text-gray-500" >&copy; 2025 Unipark Bosa. Todos los derechos reservados | Jhon Ramirez</p>
     
     </div>
 
